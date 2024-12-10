@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SM Lanang</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #e3ffe7, #d9e7ff);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+        }
+
+        .navbar .brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .navbar .menu {
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 5px 10px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar .menu a:hover {
+            background-color: #ff7b54;
+            border-radius: 5px;
+        }
+        
+
+        .back-btn {
+            position: absolute;
+            top: 70px;
+            left: 20px;
+            font-size: 1.5rem;
+            background-color: #012d21;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            z-index: 20;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .back-btn:hover {
+            background-color: #01543e;
+        }
+
+        .container {
+            padding: 20px;
+            flex: 1;
+            margin-top: 80px;
+            position: relative;
+        }
+
+        .title {
+            text-align: left;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-decoration: none;
+            position: relative;
+        }
+
+        .background {
+            width: 100%;
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .content .heading {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .content .description {
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 0.9rem;
+            margin-top: auto;
+        }
+
+        footer a {
+            color: #ff7b54;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="brand">MallHopper</div>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="ContactUs.html">Contact</a>
+        </div>
+    </div>
+
+    <a href="SML.html" class="back-btn"><i class="fa fa-chevron-left"></i></a>
+<section class="container">
+    <div class="card-grid">
+
+    <a class="card" href="#">
+        <div class="background"
+        style="background-image: url(https://scontent.fdvo5-1.fna.fbcdn.net/v/t39.30808-6/326542869_1243711102883877_5786886965924013807_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=vNN4iVkVgB0Q7kNvgH1lsBg&_nc_zt=23&_nc_ht=scontent.fdvo5-1.fna&_nc_gid=A5cipoj865tajN3r58wx91q&oh=00_AYAMu_518n0AO_-Lxd7QgSiI8A9b1meUmf_qf0WtawgfOA&oe=675DE4A1)">
+        </div>
+        <div class="content">
+            <h3 class="heading">Tsuru</h3>
+            <p class="description">Located 2nd floor</p>
+        </div>
+    </a>
+    <a class="card" href="#">
+        <div class="background"
+        style="background-image: url(https://bestindavao.com/wp-content/uploads/2013/10/vfet.jpg)">
+        </div>
+        <div class="content">
+            <h3 class="heading">Vikings Luxury Buffet</h3>
+            <p class="description">Located Upper Ground Level, The Fountain Court</p>
+        </div>
+    </a>
+    <a class="card" href="#">
+        <div class="background"
+        style="background-image: url(https://contents.smsupermalls.com/data/uploads/2021/08/KuyaJ0d5b4t8tb1tb.png)">
+        </div>
+        <div class="content">
+            <h3 class="heading">Kuya J's </h3>
+            <p class="description">Located 2nd Floor Near the Elevator</p>
+        </div>
+    </a>
+    <a class="card" href="#">
+        <div class="background"
+        style="background-image: url(https://cdn.bitrefill.com/content/cn/b_rgb%3A000000%2Cc_pad%2Ch_720%2Cw_1280/v1647289005/botejyu-php.webp)">
+        </div>
+        <div class="content">
+            <h3 class="heading">Botejyu</h3>
+            <p class="description">Located 1st Floor Northwing</p>
+        </div>
+    </a>
+    <a class="card" href="#">
+        <div class="background"
+        style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUomdbgO-G1ZbIuMuZljTJa7WBgceO4Uafhg&s)">
+        </div>
+        <div class="content">
+            <h3 class="heading">Seafood Paradise</h3>
+            <p class="description">Located 2nd Floor Near the Side fountain Elevator</p>
+        </div>
+    </a>
+    <a class="card" href="#">
+        <div class="background"
+        style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSni2dv7-cR7po0Zi7lBvLE-3YHj5-Qqzfz2g&s)">
+        </div>
+        <div class="content">
+            <h3 class="heading">Mesa</h3>
+            <p class="description">Located The Fountain Court</p>
+        </div>
+    </a>
+    <a class="card" href="#">
+        <div class="background"
+        style="background-image: url(https://banhmikitchen.ph/cdn/shop/files/Banh_Mi_Kitchen_Logo_1950x.png?v=1614290721)">
+        </div>
+        <div class="content">
+            <h3 class="heading">Banh Mi Kitchen</h3>
+            <p class="description">Located Upper Ground floor</p>
+        </div>
+    </a>
+    <div>
+</section>
+    <footer>
+        <p>&copy; 2024 MallHopper. All Rights Reserved.</p>
+        <p><a href="ContactUs.html">Contact Us</a></p>
+    </footer>
+</body>
+
+</html>
